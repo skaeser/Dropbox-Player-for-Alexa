@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "cloud player",
+            "invocationName": "meine musik",
             "intents": [
                 {
                     "name": "AMAZON.FallbackIntent",
@@ -14,8 +14,8 @@
                 {
                     "name": "AMAZON.HelpIntent",
                     "samples": [
-                        "what can you do",
-                        "help"
+                        "was kannst du",
+                        "hilfe"
                     ]
                 },
                 {
@@ -39,80 +39,58 @@
                         }
                     ],
                     "samples": [
-                        "to play {query} file",
-                        "play {query} file",
-                        "find {query} file",
-                        "search for {query} file",
-                        "search for {query} files",
-                        "find {query} files",
-                        "ask cloud player to search {query}",
-                        "tell cloud player to search for {query}",
-                        "tell cloud player to search {query}",
-                        "ask cloud player to search for {query}",
-                        "ask cloud player to play {query}",
-                        "tell cloud player to play {query}",
-                        "play {query}",
-                        "search {query}",
-                        "find {query}",
-                        "find {query} and play it",
-                        "play {query} tracks",
-                        "play {query} files",
-                        "search for {query}"
+                        "spiele {query} aus meiner musik ab",
+                        "finde {query} in meiner musik",
+                        "suche nach {query} in meiner musik",
+                        "suche {query} in meiner musik",
+                        "spiele {query}",
+                        "suche {query}",
+                        "suche nach {query}",
+                        "finde {query}"
                     ]
                 },
                 {
                     "name": "AcceptIntent",
                     "slots": [],
                     "samples": [
-                        "play",
-                        "alright",
-                        "yep",
-                        "of course",
+                        "ja",
+                        "abspielen",
+                        "genau",
                         "ok",
-                        "yes"
+                        "los"
                     ]
                 },
                 {
                     "name": "RefuseIntent",
                     "slots": [],
                     "samples": [
-                        "definitely no",
-                        "no thanks",
-                        "nope",
-                        "no"
+                        "definitiv nicht",
+                        "nein danke",
+                        "nein"
                     ]
                 },
                 {
                     "name": "PlayAllIntent",
                     "slots": [],
                     "samples": [
-                        "ask dropbox player to play all",
-                        "ask dropbox player to play all files",
-                        "to play all files",
-                        "to play all",
-                        "play all from storage",
-                        "find all files",
-                        "search for all file",
-                        "play all files from storage",
-                        "play all",
-                        "play all music files",
-                        "play all files"
+                        "spiele alle meine musik",
+                        "spiele meine musik"
                     ]
                 },
                 {
                     "name": "AMAZON.LoopOffIntent",
                     "samples": [
-                        "loop off",
-                        "disable looping",
-                        "stop looping"
+                        "wiederholung abschalten",
+                        "wiederholung deaktivieren",
+                        "keine wiederholung"
                     ]
                 },
                 {
                     "name": "AMAZON.LoopOnIntent",
                     "samples": [
-                        "loop on",
-                        "loop current song",
-                        "loop current songs"
+                        "wiederholung einschalten",
+                        "aktuelles lied wiederholen",
+                        "wiederholung aktivieren"
                     ]
                 },
                 {
@@ -132,17 +110,8 @@
                         }
                     ],
                     "samples": [
-                        "push {query}",
-                        "push {query} to playlist",
-                        "push {query} files to playlist",
-                        "push {query} files",
-                        "append {query} to playlist",
-                        "append {query} files to playlist",
-                        "append {query} files",
-                        "append {query}",
-                        "add {query} files",
-                        "add {query}",
-                        "add {query} to playlist"
+                        "füge {query} der playlist hinzu",
+                        "{query} der playlist hinzufügen"
                     ]
                 },
                 {
@@ -154,31 +123,23 @@
                         }
                     ],
                     "samples": [
-                        "normal loop {bool}",
-                        "default loop {bool}",
-                        "set default loop {bool}",
-                        "set default loop to {bool}",
-                        "set normal loop {bool}",
-                        "set usual loop {bool}",
-                        "set normal loop to {bool}",
-                        "set usual loop to {bool}"
+                        "wiederholung {bool}"
                     ]
                 },
                 {
                     "name": "SetLoopDefaultOnIntent",
                     "samples": [
-                        "loop playback",
-                        "enable looping",
-                        "enable looping of audio played"
+                        "wiederholung als standard",
+                        "wiederholung als standard aktivieren",
+                        "wiederholung als standard einschalten"
                     ]
                 },
                 {
                     "name": "SetLoopDefaultOffIntent",
                     "samples": [
-                        "disable playback looping",
-                        "turn playback looping off",
-                        "turn looping off",
-                        "disable looping"
+                        "wiederholung als standard abschalten",
+                        "wiederholung als standard deaktivieren",
+                        "keine wiederholung als standard"
                     ]
                 },
                 {
@@ -190,35 +151,30 @@
                         }
                     ],
                     "samples": [
-                        "set usual shuffle {bool}",
-                        "usual shuffle {bool}",
-                        "set usual shuffle to {bool}",
-                        "set normal shuffle to {bool}",
-                        "set default shuffle {bool}",
-                        "set default shuffle to {bool}",
-                        "default shuffle to {bool}",
-                        "default shuffle {bool}",
-                        "normal shuffle {bool}"
+                        "shuffle {bool}",
+                        "zufallswiedergabe {bool}"
                     ]
                 },
                 {
                     "name": "SetShuffleDefaultOnIntent",
                     "samples": [
-                        "shuffle as default",
-                        "enable shuffling",
-                        "enable shuffling playback",
-                        "always shuffle",
-                        "turn shuffling on",
-                        "turn shuffled playback off"
+                        "shuffle als standard",
+                        "shuffle als standard einschalten",
+                        "shuffle als standard aktivieren",
+                        "zufallswiedergabe als standard",
+                        "zufallswiedergabe als standard einschalten",
+                        "zufallswiedergabe als standard aktivieren"
                     ]
                 },
                 {
                     "name": "SetShuffleDefaultOffIntent",
                     "samples": [
-                        "disable always shuffling",
-                        "disable shuffled playback",
-                        "turn shuffling off",
-                        "turn shuffled playback off"
+                        "shuffle als standard abschalten",
+                        "shuffle als standard deaktivieren",
+                        "kein shuffle als standard",
+                        "zufallswiedergabe als standard abschalten",
+                        "zufallswiedergabe als standard deaktivieren",
+                        "keine zufallswiedergabe als standard"
                     ]
                 },
                 {
@@ -260,15 +216,18 @@
                 {
                     "name": "AMAZON.ShuffleOffIntent",
                     "samples": [
-                        "disable shuffling"
-                        "shuffle off"
+                        "shuffle abschalten",
+                        "shuffle deaktivieren",
+                        "zufallswiedergabe abschalten",
+                        "zufallswiedergabe deaktivieren"
                     ]
                 },
                 {
                     "name": "AMAZON.ShuffleOnIntent",
                     "samples": [
-                        "shuffle playback",
-                        "shuffle one"
+                        "zufallswiedergabe",
+                        "zufallswiedergabe einschalten",
+                        "zufallswiedergabe aktivieren"
                     ]
                 }
             ],
@@ -280,9 +239,9 @@
                             "name": {
                                 "value": "off",
                                 "synonyms": [
-                                    "zero",
-                                    "no",
-                                    "false"
+                                    "nein",
+                                    "off",
+                                    "aus"
                                 ]
                             }
                         },
@@ -290,9 +249,9 @@
                             "name": {
                                 "value": "on",
                                 "synonyms": [
-                                    "one",
-                                    "true",
-                                    "yes"
+                                    "ja",
+                                    "on",
+                                    "ein"
                                 ]
                             }
                         }
